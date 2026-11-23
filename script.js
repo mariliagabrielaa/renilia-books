@@ -74,7 +74,7 @@ function head(){const m=me();$('#hd').innerHTML=`<span class="logo">📚 Reníli
 function auth(){const s=mode==='up';return `<div class="card auth"><h1>${s?'Criar conta':'Entrar'}</h1><p class="muted">Leia, avalie e converse com outros leitores.</p>${sw?'<p class="tag">Escolha o perfil para entrar</p>':''}
 <form data-f="${s?'up':'in'}"><label for="u">Usuário (único)</label><input id="u" required minlength="3" maxlength="20" autocomplete="username"><label for="p">Senha</label><input id="p" type="password" required minlength="6" autocomplete="${s?'new-password':'current-password'}">${s?'<label for="p2">Confirmar senha</label><input id="p2" type="password" required minlength="6">':''}
 <div class="row" style="margin-top:1rem"><button class="p">${s?'Cadastrar':'Entrar'}</button><button type="button" data-a="mode">${s?'Já tenho conta':'Criar nova conta'}</button><button type="button" data-a="help">Preciso de ajuda</button></div></form>
-<p class="muted" style="font-size:.8rem">Demonstração: admin / admin123 · ana / 123456</p></div>`}
+</div>`}
 
 /* home(): leitura em destaque por gênero e opiniões da comunidade (RF24, RF16) */
 function home(){const d=S.until.split('-').reverse().join('/');return `<section class="hero"><h1>Leitura em destaque</h1><p>A cada período, uma obra por gênero é escolhida para lermos juntos. Destaques valem até <b>${d}</b>. Registre sua leitura, avalie e compartilhe sua opinião.</p></section>
