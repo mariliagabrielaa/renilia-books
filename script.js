@@ -20,10 +20,10 @@ const BAD=/merda|porra|caralho|puta|idiota|babaca|lixo/gi;
 /* ---------- 3. DADOS INICIAIS ----------
    B0: cada livro = [título, autor, gênero, ano, sinopse, matiz da cor da capa (0-360), URL do PDF] */
 const B0=[['Dom Casmurro','Machado de Assis','Romance',1899,'Bentinho revive a juventude e a dúvida sobre Capitu, num dos maiores romances da língua portuguesa.',12,'dom-casmurro.pdf'],
-['Memórias Póstumas de Brás Cubas','Machado de Assis','Romance',1881,'Um defunto-autor conta sua vida com ironia e humor ácido.',200,'pdfs/memorias-postumas.pdf'],
+['Memórias Póstumas de Brás Cubas','Machado de Assis','Romance',1881,'Um defunto-autor conta sua vida com ironia e humor ácido.',200,'memorias-postumas.pdf'],
 ['Iracema','José de Alencar','Romance',1865,'Lenda do Ceará: o amor entre a índia Iracema e o guerreiro português Martim.',150,'iracema.pdf'],
-['O Alienista','Machado de Assis','Conto',1882,'O doutor Simão Bacamarte funda um hospício e questiona o que é a sanidade.',280,'pdfs/o-alienista.pdf'],
-['A Cartomante','Machado de Assis','Conto',1884,'Um triângulo amoroso e uma consulta que muda o destino de três personagens.',30,'pdfs/a-cartomante.pdf'],
+['O Alienista','Machado de Assis','Conto',1882,'O doutor Simão Bacamarte funda um hospício e questiona o que é a sanidade.',280,'o-alienista.pdf'],
+['A Cartomante','Machado de Assis','Conto',1884,'Um triângulo amoroso e uma consulta que muda o destino de três personagens.',30,'a-cartomante.pdf'],
 ['Eu','Augusto dos Anjos','Poesia',1912,'Versos de um poeta singular, entre a ciência e a angústia.',320,'eu.pdf'],
 ['Broquéis','Cruz e Sousa','Poesia',1893,'Marco do simbolismo brasileiro, de musicalidade e imagens luminosas.',240,'pdfs/broqueis.pdf'],
 ['O Guarani','José de Alencar','Aventura',1857,'Peri e Cecília enfrentam perigos na natureza e nos conflitos coloniais.',100,'o-guarani.pdf'],
