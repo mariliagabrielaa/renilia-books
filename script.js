@@ -8,7 +8,7 @@
 /* ---------- 1. UTILITÁRIOS ----------
    $ = atalho do querySelector; esc() protege contra HTML injetado; hs() embaralha a senha (só demonstração). */
 const $=(s,e=document)=>e.querySelector(s),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const hs=s=>btoa(unescape(encodeURIComponent('rb'+s))),K='renilia_v5',PER=60000,G=['Romance','Conto','Poesia','Aventura'];
+const hs=s=>btoa(unescape(encodeURIComponent('rb'+s))),K='renilia_v6',PER=60000,G=['Romance','Conto','Poesia','Aventura'];
 
 /* ---------- 2. CONFIGURAÇÕES QUE VOCÊ PODE EDITAR ----------
    K   = nome da chave no localStorage (mude para zerar os dados salvos)
