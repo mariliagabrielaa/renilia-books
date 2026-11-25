@@ -48,3 +48,33 @@ dialog{max-width:640px;width:calc(100% - 2rem);border:1px solid var(--br);border
 dialog::backdrop{background:#0008}.x{float:right}
 #toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(1rem + env(safe-area-inset-bottom,0px));background:var(--tx);color:var(--bg);padding:.6rem 1rem;border-radius:8px;font:.9rem system-ui;z-index:20;display:none;max-width:90%}
 .auth{max-width:400px;margin:2rem auto}.muted{color:var(--mu)}.rd{font-size:1.1rem;line-height:1.8}
+/* ===== 9. NOVIDADES: tema, animações, banner e estantes ===== */
+
+/* Tema escuro forçado pelo botão (o automático continua valendo se a pessoa não escolher) */
+:root[data-theme=dark]{--bg:#1c1816;--sf:#292320;--tx:#f1e9e0;--mu:#b3a699;--br:#43392f;--ac:#e08a6f;--ac2:#e0a85c;--ok:#6fc79a;color-scheme:dark}
+
+/* Animações */
+.bk .cover{transition:transform .25s,box-shadow .25s}
+.bk:hover .cover,.bk:focus-visible .cover{transform:translateY(-8px) rotate(-1.5deg) scale(1.03);box-shadow:6px 12px 20px #0004}
+dialog[open]{animation:ent .25s ease}
+dialog[open]::backdrop{animation:fd .25s}
+@keyframes ent{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes fd{from{opacity:0}to{opacity:1}}
+.st button{transition:transform .15s;animation:pop .35s}
+.st button:hover{transform:scale(1.3)}
+@keyframes pop{50%{transform:scale(1.45)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* Banner rotativo da página inicial */
+.car{position:relative;overflow:hidden;border-radius:16px;margin-bottom:1rem;background:var(--sf);border:1px solid var(--br)}
+.car .sl{display:none;gap:1.2rem;align-items:center;padding:1.2rem 3.2rem 2rem}
+.car .sl.on{display:flex;animation:ent .4s ease}
+.car .cv{width:110px;flex:none}
+.car .pv,.car .nx{position:absolute;top:50%;transform:translateY(-50%);width:2rem;height:2rem;padding:0;border-radius:50%;font-size:1.2rem}
+.car .pv{left:.5rem}.car .nx{right:.5rem}
+.car .dots{position:absolute;bottom:.5rem;left:0;right:0;display:flex;justify-content:center;gap:.4rem}
+.car .dots button{width:.7rem;height:.7rem;padding:0;border-radius:50%}
+
+/* Estantes por gênero (rolagem horizontal) */
+.shelf{display:flex;gap:1rem;overflow-x:auto;padding:.9rem .2rem 1rem;scroll-snap-type:x proximity}
+.shelf .bk{flex:0 0 150px;scroll-snap-align:start}
