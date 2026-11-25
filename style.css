@@ -2,23 +2,28 @@
    Renília Books – estilos (style.css)
    Arquivos do projeto: index.html + style.css + script.js
    ===================================================== */
+
 /* ===== 1. CORES E TEMA =====
    Mude as cores aqui: --ac é a cor principal, --bg o fundo, --tx o texto.
    O bloco @media abaixo define o modo escuro automático. */
 :root{--bg:#faf6f0;--sf:#fff;--tx:#2a2320;--mu:#6f645c;--br:#e4d9cc;--ac:#8c3b2e;--ac2:#b8742a;--ok:#2f6f4f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#1c1816;--sf:#292320;--tx:#f1e9e0;--mu:#b3a699;--br:#43392f;--ac:#e08a6f;--ac2:#e0a85c;--ok:#6fc79a;color-scheme:dark}}
+
 /* ===== 2. BASE (fontes, títulos, links) ===== */
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 Georgia,'Times New Roman',serif}
 h1,h2,h3,button,input,select,textarea,nav{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 h1,h2,h3{margin:.2em 0;line-height:1.2}a{color:var(--ac)}
+
 /* ===== 3. CABEÇALHO E MENU ===== */
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--sf);border-bottom:1px solid var(--br);display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;padding:.6rem 1rem}
 .logo{font:700 1.3rem Georgia,serif;color:var(--ac)}nav{display:flex;flex-wrap:wrap;gap:.25rem;flex:1}
+
 /* ===== 4. BOTÕES (.p = principal, .on = ativo, .d = perigo) ===== */
 button,.btn{cursor:pointer;border:1px solid var(--br);background:var(--sf);color:var(--tx);border-radius:8px;padding:.45rem .8rem;font-size:.9rem}
 button:hover{border-color:var(--ac)}button.p{background:var(--ac);color:#fff;border-color:var(--ac)}button.on{background:var(--ac);color:#fff}
 button.d{color:#b3261e;border-color:#b3261e}:focus-visible{outline:3px solid var(--ac2);outline-offset:2px}
+
 /* ===== 5. CONTEÚDO: cards, destaque (hero), grade de livros e capas ===== */
 main{max-width:1100px;margin:0 auto;padding:1rem}.card{background:var(--sf);border:1px solid var(--br);border-radius:12px;padding:1rem;margin:.6rem 0}
 .hero{background:linear-gradient(135deg,var(--ac),#4a1d16);color:#fff;border-radius:16px;padding:1.5rem;margin-bottom:1rem}.hero p{max-width:60ch}
@@ -27,14 +32,17 @@ main{max-width:1100px;margin:0 auto;padding:1rem}.card{background:var(--sf);bord
 .cover{aspect-ratio:2/3;border-radius:6px 12px 12px 6px;color:#fff;padding:.8rem;display:flex;flex-direction:column;justify-content:flex-end;font:700 1rem Georgia,serif;box-shadow:3px 4px 10px #0003;border-left:6px solid #0004}
 .cover small{font:.75rem system-ui;opacity:.85}.meta{font:.8rem system-ui;color:var(--mu);margin-top:.3rem}
 .chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.6rem 0}
+
 /* ===== 6. FORMULÁRIOS ===== */
 input,select,textarea{width:100%;padding:.55rem;border:1px solid var(--br);border-radius:8px;background:var(--bg);color:var(--tx);font-size:1rem}
 label{display:block;font:600 .85rem system-ui;margin:.6rem 0 .2rem}.row{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+
 /* ===== 7. ESTRELAS, TAGS, CHAT ===== */
 .st{color:var(--ac2);font-size:1.3rem;letter-spacing:2px}.st button{border:0;background:none;font-size:1.5rem;padding:0 .1rem;color:var(--ac2)}
 .tag{display:inline-block;font:.75rem system-ui;background:var(--br);border-radius:99px;padding:.1rem .6rem}
 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
 .chat{height:260px;overflow:auto;background:var(--bg);border:1px solid var(--br);border-radius:8px;padding:.6rem}.msg{margin:.3rem 0}.msg b{color:var(--ac)}
+
 /* ===== 8. JANELAS (modais) E AVISOS (toast) ===== */
 dialog{max-width:640px;width:calc(100% - 2rem);border:1px solid var(--br);border-radius:14px;background:var(--sf);color:var(--tx);padding:1.2rem;max-height:90vh}
 dialog::backdrop{background:#0008}.x{float:right}
