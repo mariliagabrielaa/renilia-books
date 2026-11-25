@@ -25,7 +25,7 @@ const B0=[['Dom Casmurro','Machado de Assis','Romance',1899,'Bentinho revive a j
 ['O Alienista','Machado de Assis','Conto',1882,'O doutor Simão Bacamarte funda um hospício e questiona o que é a sanidade.',280,'o-alienista.pdf','alienista.jpg'],
 ['A Cartomante','Machado de Assis','Conto',1884,'Um triângulo amoroso e uma consulta que muda o destino de três personagens.',30,'a-cartomante.pdf','a_cartomante.jpg'],
 ['Eu','Augusto dos Anjos','Poesia',1912,'Versos de um poeta singular, entre a ciência e a angústia.',320,'eu.pdf','eu.jpg'],
-['Broquéis','Cruz e Sousa','Poesia',1893,'Marco do simbolismo brasileiro, de musicalidade e imagens luminosas.',240,'pdfs/broqueis.pdf','broqueis.jpg'],
+['Broquéis','Cruz e Sousa','Poesia',1893,'Marco do simbolismo brasileiro, de musicalidade e imagens luminosas.',240,'broqueis.pdf','broqueis.jpg'],
 ['O Guarani','José de Alencar','Aventura',1857,'Peri e Cecília enfrentam perigos na natureza e nos conflitos coloniais.',100,'o-guarani.pdf','o_guarani.jpg'],
 ['Quarto de Despejo','Carolina Maria de Jesus','Aventura',1960,'Diário de uma mulher negra, mãe solteira, que vive na favela do Canindé, em São Paulo.',60,'Quarto de Despejo - Maria Carolina de Jesus.pdf','quarto_de_despejo.jpg']];
 
